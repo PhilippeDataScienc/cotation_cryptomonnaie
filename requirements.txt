@@ -1,0 +1,4 @@
+flask == 3.0.2
+yfinance == 0.2.36
+lxml == 5.1.0
+html5lib == 1.1
