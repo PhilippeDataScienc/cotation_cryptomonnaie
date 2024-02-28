@@ -11,14 +11,14 @@ def home():
 
 @app.route("/quote")
 def display_quote():
-    symbol = request.args.get('symbol', default="AAPL")
+    symbol = request.args.get('symbol', default="XRP-USD")
     quote = yf.Ticker(symbol)
     return quote.info
 
 
 @app.route("/history")
 def display_history():
-    symbol = request.args.get('symbol', default="AAPL")
+    symbol = request.args.get('symbol', default="XRP-USD")
     period = request.args.get('period', default="1y")
     interval = request.args.get('interval', default="1mo")
     quote = yf.Ticker(symbol)
